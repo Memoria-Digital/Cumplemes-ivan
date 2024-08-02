@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cumple Mes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assent/css/styles.css">
+    <link rel="stylesheet" href="./assent/css/musica.css">
+    <link rel="icon" href="./assent/img/alegria.png" type="image/x-icon">
+
+    <style>
+        .video-carousel {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .video-carousel video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .video-wrapper {
+            position: relative;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        .play-button:focus {
+            outline: none;
+        }
+        .carousel-item {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="letra titulo a">Feliz Cumple Mes</h1>
+        <p class="date titulo"><b>03/08/2024</b> </p>
+    </header>
+    <main>
+        <div class="container">
+            
+            <div class="card" style="background-image: url('./assent/img/imagen1\ \(1\).jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen2.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen3.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen4.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen5.jpg');"></div>
+         
+        
+
+           
+        </div>
+        
+        <div class="letter-container mt-5">
+            <h2 class="titulo2">Mi Carta para Ti</h2>
+            <div class="letter-content">
+               <p>Mi amor mi ojitos lindos mi wawita mi monita ❤️🥰
+                Hoy celebramos 9 meses juntos y no puedo creer lo rápido que ha pasado el tiempo. Cada día a tu lado es un regalo, un nuevo descubrimiento de lo mucho que te amo.
+                
+                Eres la luz que ilumina mi vida, eres la que me levanta de todas mis caídas. Eres mi refugio, mi cable a tierra,mi felicidad.🥹
+                
+                En estos meses, me he dado cuenta de lo importante que eres para mi , mi compañera de aventuras. Amo la forma en que me amas mi amorcito se que cumpliremos todas nuestras metas juntitos 🥰🥹
+                
+                Gracias por ser tú, por ser tan increíble, por hacer que cada día sea especial. Te amo demasiado mi amorcito Eres lo mejor de mi vida.🥹❤️</p>
+                <p>Feliz 9 meses, mi amor. ¡Te amo!"❤️🥰</p>
+               
+                
+        </div>
+
+        <!-- Carrusel de videos aa -->
+        <div class="container mt-5 video-carousel">
+            <h2 class="titulo2 text-center">Mejores Momentos</h2>
+            <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="video-wrapper">
+                            <video id="video1" width="600" height="400" controls>
+                                <source src="./assent/videos/video1.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video1')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video2" width="600" height="400" controls>
+                                <source src="./assent/videos/video2.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video2')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video3" width="600" height="400" controls>
+                                <source src="./assent/videos/video3.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video3')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video4" width="600" height="400" controls>
+                                <source src="./assent/videos/video4.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video4')">&#9658;</button>
+                        </div>
+                    </div>
+                   
+                   
+            
+                   
+                </div>
+                <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+        
+    </main>
+    <script src="./assent/js/musica.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assent/js/script.js"></script>
+    <script>
+        function playPause(videoId) {
+            var video = document.getElementById(videoId);
+            var button = video.nextElementSibling;
+            if (video.paused) {
+                video.play();
+                button.style.display = 'none';
+            } else {
+                video.pause();
+                button.style.display = 'block';
+            }
+
+            video.onended = function() {
+                button.style.display = 'block';
+            };
+        }
+    </script>
+</body>
+</html>
